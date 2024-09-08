@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Плавна прокрутка */
+}
+.portfolio-card {
+    margin-bottom: 20px;
+}
+.portfolio-card img {
+    height: 200px;
+    object-fit: cover;
+}
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+header .nav-link {
+    color: white !important;
+}
+.content {
+    padding-top: 80px; /* Відступ для закріпленого хедера */
+}
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 0;
+}
+.footer-map {
+    height: 200px;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .footer-map {
+        width: 50%;
+    }
+}
+
+hr.dotted {
+    border-top: 3px dotted #bbb;
+  }
