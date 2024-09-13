@@ -9,7 +9,14 @@ function openImage(imgElement) {
     const currentYear = new Date().getFullYear(); // Отримуємо поточний рік
     document.getElementById('start-year').textContent = startYear;
     document.getElementById('end-year').textContent = currentYear;
-});  
+}); 
+
+function addOrderText (text) {
+  var textarea = document.getElementById("description");
+  textarea.value += text;
+  const formElement = document.getElementById('order');
+  formElement.scrollIntoView({ behavior: 'smooth' });
+}
 
   // alert('test');
   
